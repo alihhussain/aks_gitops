@@ -15,7 +15,7 @@ kind: Deployment
 metadata:
   name: hello-arc
 spec:
-  replicas: 6
+  replicas: 2
   selector:
     matchLabels:
       app: hello-arc
@@ -31,4 +31,4 @@ spec:
             - containerPort: 8080
           env:
             - name: MESSAGE
-              value: This is an Azure Arc GitOps Demo (AKS Cluster Read Replica = 6)!
+              value: This is an Azure Kubernetes GitOps Demo (Read Replica = 2)!
